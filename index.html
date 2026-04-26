@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medhat Samy | Flutter Developer</title>
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body style="cursor: none;">
+
+<!-- Preloader -->
+<div id="loader">
+  <div class="loader-circle"></div>
+</div>
+
+<!-- Custom Cursor -->
+<div class="cursor-dot"></div>
+<div class="cursor-outline"></div>
+
+<!-- Background Blobs -->
+<div class="bg-blobs">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+</div>
+
+<!-- NAV -->
+<header>
+  <h2 class="logo">Medhat</h2>
+  <nav>
+    <div class="close-icon" id="closeMenu" style="display: none; position: absolute; top: 20px; right: 20px; font-size: 1.5rem; color: var(--primary); cursor: pointer;">
+      <i class="fas fa-times"></i>
+    </div>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="menu-icon" id="menuToggle" style="display: none; font-size: 1.5rem; color: var(--primary); cursor: pointer;">
+    <i class="fas fa-bars"></i>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Hi, I'm <span>Medhat Samy</span></h1>
+    <div class="typing"></div>
+    <p>
+      Expert Flutter Developer with 2+ years of experience in building high-performance, 
+      scalable mobile applications using Clean Architecture and MVVM.
+    </p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn">View My Work</a>
+      <a href="#contact" class="btn btn-outline" style="background: transparent; border: 2px solid var(--primary); color: var(--primary); box-shadow: none;">Contact Me</a>
+    </div>
+  </div>
+  <div class="hero-image" style="flex: 1; display: flex; justify-content: center; align-items: center;">
+    <div class="image-wrapper" style="width: 380px; height: 380px; border-radius: 50%; overflow: hidden; border: 8px solid white; box-shadow: var(--shadow-lg);">
+       <img src="images/img2.jpeg" alt="Medhat Samy" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+  </div>
+  <div class="scroll-indicator" style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 10px; color: var(--text-dim);">
+    <span style="font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px;">Scroll</span>
+    <div style="width: 25px; height: 40px; border: 2px solid var(--text-dim); border-radius: 20px; position: relative;">
+      <div class="scroll-dot" style="width: 4px; height: 4px; background: var(--primary); border-radius: 50%; position: absolute; top: 8px; left: 50%; transform: translateX(-50%); animation: scrollDown 2s infinite;"></div>
+    </div>
+  </div>
+  <div class="wave-divider">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+    </svg>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section hidden">
+  <h2 class="section-title" data-text="EXPERIENCE">Professional Experience</h2>
+  <div class="experience-container" style="max-width: 900px; margin: 0 auto;">
+    <div class="timeline-item" style="border-left-color: var(--secondary);">
+      <span>Jan 2024 - Present</span>
+      <h3>Junior Flutter Developer</h3>
+      <p><strong>Freelance & Personal Projects</strong></p>
+      <ul style="margin-top: 15px; color: var(--text-dim); padding-left: 20px;">
+        <li>Developed and deployed 4+ complex mobile applications to Google Play and App Store.</li>
+        <li>Implemented Clean Architecture and Bloc state management to ensure 99.9% crash-free sessions.</li>
+        <li>Optimized app performance by 40% through efficient local caching and lazy loading.</li>
+      </ul>
+    </div>
+    <div class="timeline-item">
+      <span>Oct 2023 - Dec 2023</span>
+      <h3>Flutter Intern</h3>
+      <p><strong>Tech Solutions Inc.</strong></p>
+      <ul style="margin-top: 15px; color: var(--text-dim); padding-left: 20px;">
+        <li>Collaborated with a senior team to build a real-time social networking application.</li>
+        <li>Integrated Firebase Cloud Messaging and Firestore for real-time notifications and data sync.</li>
+        <li>Refined UI/UX designs based on user feedback, improving engagement by 25%.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section hidden">
+  <h2 class="section-title" data-text="ABOUT">About Me</h2>
+  <div class="about-card" style="background: white; padding: 40px; border-radius: 30px; box-shadow: var(--shadow); max-width: 900px; margin: 0 auto; text-align: center;">
+    <p style="font-size: 1.2rem; color: var(--text-dim);">
+      I am a passionate Flutter developer dedicated to building scalable, maintainable mobile applications. 
+      With a strong focus on <strong>Clean Architecture</strong> and <strong>MVVM</strong>, I ensure that every line of code is optimized for performance and future growth.
+      I love turning complex problems into beautiful, intuitive user interfaces.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section hidden">
+  <h2 class="section-title" data-text="EXPERTISE">Technical Expertise</h2>
+  <div class="skills-grid">
+    <div class="skill-box">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin: 0 auto 15px; display: block;">
+        <path d="M14.314 0L2.3 12L6 15.7L21.686 0H14.314ZM21.686 12L12 21.7L8.3 18L18 8.3H21.686V12Z" fill="#02539A"/>
+        <path d="M12 21.7L8.3 24L0 15.7L8.3 7.4L12 11.1L3.7 19.4L12 21.7Z" fill="#45D1FD"/>
+      </svg>
+      <span>Flutter</span>
+    </div>
+    <div class="skill-box">
+      <i class="fas fa-code"></i>
+      <span>Dart</span>
+    </div>
+    <div class="skill-box">
+      <i class="fas fa-layer-group"></i>
+      <span>Bloc / Cubit</span>
+    </div>
+    <div class="skill-box">
+      <i class="fas fa-sitemap"></i>
+      <span>Clean Architecture</span>
+    </div>
+    <div class="skill-box">
+      <i class="fas fa-cloud"></i>
+      <span>Firebase</span>
+    </div>
+    <div class="skill-box">
+      <i class="fas fa-database"></i>
+      <span>SQLite</span>
+    </div>
+    <div class="skill-box">
+      <i class="fas fa-exchange-alt"></i>
+      <span>REST APIs</span>
+    </div>
+    <div class="skill-box">
+      <i class="fab fa-git-alt"></i>
+      <span>Git & GitHub</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section hidden">
+  <h2 class="section-title" data-text="PORTFOLIO">Featured Projects</h2>
+  <div class="projects-container">
+
+    <div class="card">
+      <div class="card-header"><i class="fas fa-spa"></i></div>
+      <div class="card-content">
+        <div class="tags">
+          <span class="tag">Flutter</span>
+          <span class="tag">Bloc</span>
+          <span class="tag">Clean Arch</span>
+        </div>
+        <h3>Glow & Go App</h3>
+        <p>Premium beauty service platform with real-time booking and optimized UI performance.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><i class="fas fa-users"></i></div>
+      <div class="card-content">
+        <div class="tags">
+          <span class="tag">Firebase</span>
+          <span class="tag">Real-time</span>
+          <span class="tag">MVVM</span>
+        </div>
+        <h3>Social Connectivity</h3>
+        <p>A full-featured social platform featuring real-time messaging and dynamic feed updates.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><i class="fas fa-globe"></i></div>
+      <div class="card-content">
+        <div class="tags">
+          <span class="tag">REST API</span>
+          <span class="tag">NewsAPI</span>
+          <span class="tag">Filtering</span>
+        </div>
+        <h3>Global News App</h3>
+        <p>Stay updated with curated news from around the world with category-based filtering.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><i class="fas fa-tasks"></i></div>
+      <div class="card-content">
+        <div class="tags">
+          <span class="tag">SQLite</span>
+          <span class="tag">Local Storage</span>
+          <span class="tag">UI/UX</span>
+        </div>
+        <h3>Productive Tasker</h3>
+        <p>Efficient task management with local persistence and a clean, focused interface.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section hidden">
+  <h2 class="section-title" data-text="JOURNEY">Education & Growth</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <span>2024</span>
+      <h3>Bachelor of Computer Science</h3>
+      <p>University of Monufia - Specialized in Software Engineering</p>
+    </div>
+    <div class="timeline-item">
+      <span>2024 - 2025</span>
+      <h3>Advanced Flutter Specialization</h3>
+      <p>Mastery of State Management (Bloc), MVVM, and Clean Architecture patterns.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section hidden">
+  <h2 class="section-title" data-text="CONTACT">Get In Touch</h2>
+  <div class="contact-grid">
+    <div class="contact-item">
+      <i class="fas fa-envelope"></i>
+      <h3>Email</h3>
+      <a href="mailto:medhatsamy404@gmail.com">medhatsamy404@gmail.com</a>
+    </div>
+    <div class="contact-item">
+      <i class="fab fa-linkedin"></i>
+      <h3>LinkedIn</h3>
+      <a href="www.linkedin.com/in/medhat-samy-a90033310" target="_blank">Connect on LinkedIn</a>
+    </div>
+    <div class="contact-item">
+      <i class="fab fa-github"></i>
+      <h3>GitHub</h3>
+      <a href="https://github.com/mdhtsami101" target="_blank">Follow on GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2026 Medhat Samy. All rights reserved.</p>
+    <p>Built with Passion & Flutter Expertise</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
